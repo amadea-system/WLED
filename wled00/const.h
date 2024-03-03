@@ -153,6 +153,10 @@
 #define USERMOD_ID_LDR_DUSK_DAWN         43     //Usermod "usermod_LDR_Dusk_Dawn_v2.h"
 #define USERMOD_ID_STAIRWAY_WIPE         44     //Usermod "stairway-wipe-usermod-v2.h"
 
+// I am temporarily using a much higher ID for the new usermod, 
+//   so that it does not conflict with any new usermod that may be added in the future.
+#define USERMOD_ID_M5ATOMWIFIFIX         99     //Usermod "usermod_m5atomwififix.h"
+
 //Access point behavior
 #define AP_BEHAVIOR_BOOT_NO_CONN          0     //Open AP when no connection after boot
 #define AP_BEHAVIOR_NO_CONN               1     //Open when no connection (either after boot or if connection is lost)

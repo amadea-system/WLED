@@ -352,7 +352,9 @@ WLED_GLOBAL byte nightlightTargetBri _INIT(0);      // brightness after nightlig
 WLED_GLOBAL byte nightlightDelayMins _INIT(60);
 WLED_GLOBAL byte nightlightMode      _INIT(NL_MODE_FADE); // See const.h for available modes. Was nightlightFade
 
-WLED_GLOBAL byte briMultiplier _INIT(100);          // % of brightness to set (to limit power, if you set it to 50 and set bri to 255, actual brightness will be 127)
+// Lower the default brightness limit to 7% to conform with M5Stacks maximum brightness warning.
+WLED_GLOBAL byte briMultiplier _INIT(7);          // % of brightness to set (to limit power, if you set it to 50 and set bri to 255, actual brightness will be 127)
+// WLED_GLOBAL byte briMultiplier _INIT(100);          // % of brightness to set (to limit power, if you set it to 50 and set bri to 255, actual brightness will be 127)
 
 // User Interface CONFIG
 #ifndef SERVERNAME

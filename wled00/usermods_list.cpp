@@ -204,6 +204,11 @@
 #ifdef USERMOD_STAIRCASE_WIPE
 #include "../usermods/stairway_wipe_basic/stairway-wipe-usermod-v2.h"
 #endif
+
+#ifdef USERMOD_M5ATOM_WIFI_FIX
+  #include "../usermods/M5Atom_Wifi_Fix_v2/usermod_m5atom_wifi_fix.h"
+#endif
+
 void registerUsermods()
 {
 /*
@@ -386,5 +391,9 @@ void registerUsermods()
 
   #ifdef USERMOD_STAIRCASE_WIPE
   usermods.add(new StairwayWipeUsermod());
+  #endif
+  
+  #ifdef USERMOD_M5ATOM_WIFI_FIX
+  usermods.add(new M5AtomWifiFixUsermod());
   #endif
 }
